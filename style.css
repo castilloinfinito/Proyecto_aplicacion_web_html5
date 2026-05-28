@@ -1,5 +1,5 @@
 /* ==========================================
-   CONFIGURACIÓN GENERAL Y TIPOGRAFÍA
+   CONFIGURACIÓN GENERAL Y TIPOGRAFÍA BASICA
    ========================================== */
 body {
     font-family: Arial, sans-serif;
@@ -36,7 +36,7 @@ h1 {
 }
 
 /* ==========================================
-   MENÚ DE NAVEGACIÓN (NAV)
+   MENÚ DE NAVEGACIÓN 
    ========================================== */
 nav {
     background-color: #333;
@@ -97,15 +97,15 @@ aside {
    ========================================== */
 table {
     width: 100%;
-    border-collapse: collapse; /* Combina los bordes de celdas en uno solo (antiguo cellspacing=0) */
+    border-collapse: collapse; /* Combina los bordes de celdas en uno solo  */
     text-align: left;
     margin-top: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 th, td {
-    border: 1px solid #dddddd; /* Define la línea de la cuadrícula (antiguo border=1) */
-    padding: 12px 15px;       /* Controla el espaciado interno (antiguo cellpadding=10) */
+    border: 1px solid #dddddd; /* Define la línea de la cuadrícula  */
+    padding: 12px 15px;       /* Controla el espaciado interno  */
 }
 
 th {
