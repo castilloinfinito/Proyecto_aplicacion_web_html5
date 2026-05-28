@@ -7,13 +7,14 @@
     <title>Guía de Lenguaje Semántico de HTML5</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
+<!-- la parte visible de esta pagina,contiene articulos complementarios, con la pagina principal de esta aplicacion de guia-->
 <body> 
+    <!-- el titulo usado en el encabezado, relaciona la pag actual ,con la anterior(inicio)-->
     <header>
         <img src="./logoUVM.png" alt="Logo  UVM" id="main-logo">
         <h1>Profundizando en la Semántica Web</h1>
     </header>
-
+<!-- mantendremos el mismo tipo de  menu de navegación para mejorar la usabilidad de la interface, -->
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -21,13 +22,13 @@
             <li><a href="contactos.html">Contacto</a></li>
         </ul>
     </nav>
-
+<!-- division estructurada del contenido principal en articulos concatenados por lógica del contenido-->
     <main>
         <h2>Explorando el Impacto del Código con Propósito</h2>
         <p>El diseño web moderno no se trata solo de estética, sino de cómo la información se estructura para ser consumida por humanos y máquinas. Explora nuestros artículos destacados.</p>
 
         <div id="lista-articulos">
-            
+            <!-- a los articulos los dotamos de un encabezado para orientar la experiencia visual del usuario-->
             <article>
                 <header>
                     <h3>1. El Poder del Diseño Semántico e Imágenes</h3>
@@ -48,7 +49,7 @@
                     <h3>2. Accesibilidad Web (a11y) y Elementos de Audio</h3>
                 </header>
                 <p>La semántica es el pilar de la accesibilidad. Las personas con discapacidad visual utilizan lectores de pantalla que navegan el sitio saltando de un encabezado a otro. Un código sin semántica es incomprensible para estas herramientas.</p>
-                
+             <!-- uso de etiquetas de recuros multimedia como imagenes, audio y video para ampliar la comprensión y experiencia del usuario en  los articulos.-->   
                 <p><em>Escucha este fragmento de podcast sobre accesibilidad:</em></p>
                 
                 <audio controls preload="metadata">
@@ -97,7 +98,7 @@
 
         </div>
     </main>
-
+    <!-- mantenemos los pie de pagina para informacion especifica al ususario de la aplicacion-->
     <footer>
         <p>&copy; 2026 Proyecto de materia Programación 2026B. Todos los derechos reservados. María Luisa Vargas T. C.I. 32.550.647.</p>
     </footer>

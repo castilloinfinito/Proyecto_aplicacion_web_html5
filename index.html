@@ -1,17 +1,15 @@
-<!-- declaración del tipo de documento,etiqueta raíz de todo el documento,lang="es": Define que el idioma principal del contenido -->
+<!--etiqueta raíz de todo el documento,lang="es":Define  el idioma principal del contenido -->
 <!DOCTYPE html>
 <html lang="es">
- <!-- cerebro oculto" de la página web.meta charset="UTF-8">: Define la codificación de caracteres.title>: Es el título oficial de la página -->   
+ <!--cerebro oculto de la página web.meta charset="UTF-8">: Define la codificación de caracteres.title>: Es el título oficial de la página -->   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guía de Lenguaje Semántico de HTML5</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- Cuerpo  principal  que se visualiza de la pag web, estructura peincipal de contenido que ve el ususario en el navegador -->
+<!-- Cuerpo  principal  que se visualiza de la pag web, estructura principal de contenido que ve el usuario en el navegador -->
 <body>
-     <!-- representa la cabecera principal (o header) de la página web,presenta de forma clara y ordenada quién es el dueño del sitio -->
-
     <header>
         <img src="./logoUVM.png" alt="Logo UVM" id="main-logo">
         <!-- h1 solo se ua uan vez y es para título principal de la pagina-->
@@ -19,6 +17,7 @@
     </header>
    <!-- Es una etiqueta semántica de HTML5. Le dice explícitamente al navegador, a los lectores de pantalla y a Google:es el bloque de navegación principal de la web".-->
     <nav>
+        <!-- lista desordenada de navegacion-->
         <ul>
             <li><a href="index.html" class="active">Inicio</a></li>
             <li><a href="articulos.html">Artículos</a></li>
@@ -30,7 +29,7 @@
         <h2>Bienvenidos al Lenguaje Semántico de HTML5: El Diseño Consciente en la Web Accesible y Responsiva</h2>
         
         <p>En el mundo del desarrollo web, el uso del lenguaje semántico nos permite estructurar la información con un significado claro tanto para los navegadores, como para los desarrolladores. A continuación, presentamos sus componentes fundamentales.</p>
-<!-- uso de etiquetas de agrupcion section, articule,aside,para lograr jerarquizacion de las etiquetas y uso de la logica semantica de html5-->
+<!-- uso de etiquetas de agrupcion section, articule,aside,para lograr jerarquizacion de las etiquetas y uso de la logica semantica de html, etiquetas h3 a h4-->
         <section id="articulos">
             <h3>1. Desarrollo del Documento: Elementos de Agrupación</h3>
             
@@ -38,7 +37,7 @@
                 <h4>El elemento <code>&lt;article&gt;</code></h4>
                 <p>Representa una composición autocontenida en un documento, página, aplicación o sitio, que se pretende que sea distribuible o reutilizable de forma independiente. Ejemplos de uso incluyen un post en un foro, un artículo de revista o periódico, o una entrada de blog.</p>
             </article>
-            <!--article> en HTML5 . aui lo usamos en varias secciones por Su característica fundamental  que su contenido tiene sentido por sí mismo-->
+            <!--article> en HTML5 . aqui lo usamos en varias secciones por Su característica fundamental  que su contenido tiene sentido por sí mismo-->
             <article>
                 <h4>El elemento <code>&lt;section&gt;</code></h4>
                 <p>Representa una sección genérica de un documento. En este contexto, se utiliza para agrupar contenido temático, generalmente con un encabezado. A diferencia de un <code>&lt;div&gt;</code>, este elemento tiene un valor semántico específico y ayuda a esquematizar el documento.</p>
