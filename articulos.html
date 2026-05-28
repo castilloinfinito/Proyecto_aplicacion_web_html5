@@ -1,0 +1,106 @@
+<!-- declaración del tipo de documento,etiqueta raíz de todo el documento,lang="es": Define que el idioma principal del contenido -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Lenguaje Semántico de HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+    <header>
+        <img src="./logoUVM.png" alt="Logo  UVM" id="main-logo">
+        <h1>Profundizando en la Semántica Web</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="articulos.html" class="active">Artículos</a></li>
+            <li><a href="contactos.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Explorando el Impacto del Código con Propósito</h2>
+        <p>El diseño web moderno no se trata solo de estética, sino de cómo la información se estructura para ser consumida por humanos y máquinas. Explora nuestros artículos destacados.</p>
+
+        <div id="lista-articulos">
+            
+            <article>
+                <header>
+                    <h3>1. El Poder del Diseño Semántico e Imágenes</h3>
+                    <p>Publicado por: María Luisa Vargas T. | <time datetime="2026-05-26">26 de mayo, 2026</time></p>
+                </header>
+                <p>El diseño semántico otorga significado al contenido. Al usar etiquetas como <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code> o <code>&lt;footer&gt;</code>, le decimos al navegador exactamente qué función cumple cada bloque de código, alejándonos de la antigua práctica de usar <code>&lt;div&gt;</code> para todo.</p>
+                
+                <figure>
+                    <img src="estructura.jpg" alt="Comparación visual entre HTML no semántico y HTML5 semántico" class="responsive-img">
+                    <figcaption>Figura 1: Evolución de la estructura web hacia HTML5.</figcaption>
+                </figure>
+            </article>
+
+            <hr> 
+            
+            <article>
+                <header>
+                    <h3>2. Accesibilidad Web (a11y) y Elementos de Audio</h3>
+                </header>
+                <p>La semántica es el pilar de la accesibilidad. Las personas con discapacidad visual utilizan lectores de pantalla que navegan el sitio saltando de un encabezado a otro. Un código sin semántica es incomprensible para estas herramientas.</p>
+                
+                <p><em>Escucha este fragmento de podcast sobre accesibilidad:</em></p>
+                
+                <audio controls preload="metadata">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio. Por favor, actualízalo.
+                </audio>
+            </article>
+
+            <hr>
+
+            <article>
+                <header>
+                    <h3>3. Experiencia del Usuario (UX) y Video Nativo</h3>
+                </header>
+                <p>Una buena estructura HTML impacta directamente en cómo el usuario percebe el rendimiento y la organización visual de la página. Los navegadores pueden renderizar el contenido de forma más predecible.</p>
+                
+                <figure>
+                    <video class="responsive-video" controls preload="metadata">
+                        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video HTML5.
+                    </video>
+                    <figcaption>Video demostrativo: Navegación fluida gracias a una buena estructura.</figcaption>
+                </figure>
+            </article>
+
+            <hr>
+
+            <article>
+                <header>
+                    <h3>4. Recursos Externos y Conexión mediante iFrame</h3>
+                </header>
+                <p>Complementar la información con recursos externos es vital para el aprendizaje continuo. HTML5 nos permite incrustar contenido de plataformas de terceros de manera segura y eficiente.</p>
+                
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Pj15b6-7R3c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <footer>
+                    <p>Enlaces recomendados:</p>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=Pj15b6-7R3c" target="_blank" rel="noopener noreferrer">Ver este video directamente en YouTube</a></li>
+                        <li><a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_blank" rel="noopener noreferrer">Documentación oficial de MDN Web Docs sobre Estructura</a></li>
+                    </ul>
+                </footer>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Proyecto de materia Programación 2026B. Todos los derechos reservados. María Luisa Vargas T. C.I. 32.550.647.</p>
+    </footer>
+
+</body>
+</html>

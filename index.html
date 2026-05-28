@@ -1,0 +1,116 @@
+<!-- declaración del tipo de documento,etiqueta raíz de todo el documento,lang="es": Define que el idioma principal del contenido -->
+<!DOCTYPE html>
+<html lang="es">
+ <!-- cerebro oculto" de la página web.meta charset="UTF-8">: Define la codificación de caracteres.title>: Es el título oficial de la página -->   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Lenguaje Semántico de HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Cuerpo  principal  que se visualiza de la pag web, estructura peincipal de contenido que ve el ususario en el navegador -->
+<body>
+     <!-- representa la cabecera principal (o header) de la página web,presenta de forma clara y ordenada quién es el dueño del sitio -->
+
+    <header>
+        <img src="./logoUVM.png" alt="Logo UVM" id="main-logo">
+        <!-- h1 solo se ua uan vez y es para título principal de la pagina-->
+        <h1>Guía Práctica de Uso de Etiquetas HTML5</h1>
+    </header>
+   <!-- Es una etiqueta semántica de HTML5. Le dice explícitamente al navegador, a los lectores de pantalla y a Google:es el bloque de navegación principal de la web".-->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="articulos.html">Artículos</a></li>
+            <li><a href="contactos.html">Contacto</a></li>
+        </ul>
+    </nav>
+<!-- La etiqueta <main> en HTML representa el contenido principal y dominante de un sitio web-->
+    <main>
+        <h2>Bienvenidos al Lenguaje Semántico de HTML5: El Diseño Consciente en la Web Accesible y Responsiva</h2>
+        
+        <p>En el mundo del desarrollo web, el uso del lenguaje semántico nos permite estructurar la información con un significado claro tanto para los navegadores, como para los desarrolladores. A continuación, presentamos sus componentes fundamentales.</p>
+<!-- uso de etiquetas de agrupcion section, articule,aside,para lograr jerarquizacion de las etiquetas y uso de la logica semantica de html5-->
+        <section id="articulos">
+            <h3>1. Desarrollo del Documento: Elementos de Agrupación</h3>
+            
+            <article>
+                <h4>El elemento <code>&lt;article&gt;</code></h4>
+                <p>Representa una composición autocontenida en un documento, página, aplicación o sitio, que se pretende que sea distribuible o reutilizable de forma independiente. Ejemplos de uso incluyen un post en un foro, un artículo de revista o periódico, o una entrada de blog.</p>
+            </article>
+            <!--article> en HTML5 . aui lo usamos en varias secciones por Su característica fundamental  que su contenido tiene sentido por sí mismo-->
+            <article>
+                <h4>El elemento <code>&lt;section&gt;</code></h4>
+                <p>Representa una sección genérica de un documento. En este contexto, se utiliza para agrupar contenido temático, generalmente con un encabezado. A diferencia de un <code>&lt;div&gt;</code>, este elemento tiene un valor semántico específico y ayuda a esquematizar el documento.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>2. Importancia de la Estructura General</h3>
+            <p>Mantener una estructura clara y semántica en el cuerpo (<code>&lt;body&gt;</code>) de una página web es vital por tres razones fundamentales:</p>
+            <ul>
+                <li><strong>Accesibilidad:</strong> Los lectores de pantalla y otras tecnologías de asistencia interpretan mejor el contenido, permitiendo a los usuarios con discapacidades navegar de manera eficiente.</li>
+                <li><strong>SEO (Optimización para Motores de Búsqueda):</strong> Ayuda a los rastreadores de Google y otros buscadores a indexar el contenido, dándole más peso a lo que está dentro de <code>&lt;main&gt;</code> o <code>&lt;article&gt;</code>.</li>
+                <li><strong>Mantenibilidad:</strong> Permite a los desarrolladores comprender rápidamente la jerarquía del código, haciendo que las modificaciones futuras sean más rápidas y menos propensas a errores.</li>
+            </ul>
+        </aside>
+
+        <section>
+            <h3>3. Tabla de Etiquetas Semánticas Más Usadas en HTML5</h3>
+            <!-- uso de formato tabla , una tabla informativa que organiza y explica el significado de las principales etiquetas semánticas de HTML5 utilizadas en el diseño web -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripción</th>
+                        <th>Propósito Semántico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;header&gt;</code></td>
+                        <td>Cabecera</td>
+                        <td>Define la cabecera de un documento o sección. Suele contener logotipos, títulos (h1-h6) y navegación.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;nav&gt;</code></td>
+                        <td>Navegación</td>
+                        <td>Contiene los enlaces de navegación principales del sitio o página.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;main&gt;</code></td>
+                        <td>Contenido Principal</td>
+                        <td>Especifica el contenido principal del documento. Debe ser único en la página web.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;section&gt;</code></td>
+                        <td>Sección</td>
+                        <td>Define una sección de contenido temáticamente agrupado dentro de la página.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;article&gt;</code></td>
+                        <td>Artículo</td>
+                        <td>Representa un contenido independiente y autónomo que tiene sentido por sí mismo.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;aside&gt;</code></td>
+                        <td>Contenido Tangencial</td>
+                        <td>Contenido relacionado tangencialmente con el contenido que lo rodea (ej. barras laterales, publicidad).</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;footer&gt;</code></td>
+                        <td>Pie de página</td>
+                        <td>Define el pie de un documento o sección, conteniendo información de autoría, copyrights, enlaces legales, etc.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- La tabla está estructurada por <table> como el contenedor principal, <thead> para agrupar la cabecera, <tbody> para el cuerpo de los datos, <tr> para definir cada fila, <th> para las celdas de título y <td> para las celdas de contenido-->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Proyecto de materia Programación 2026B. Todos los derechos reservados. María Luisa Vargas T. C.I. 32.550.647.</p>
+    </footer>
+<!-- el pie de página (<footer>) de la web, utilizado aquí para mostrar de forma concisa los derechos de autor de 2026-->
+</body>
+</html>

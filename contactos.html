@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Diseño Semántico HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="./logoUVM.png" alt="Logo Universidad Valle del Momboy - UVM" id="main-logo">
+        <h1>Conecta con Nosotros</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="articulos.html">Artículos</a></li>
+            <li><a href="contactos.html" class="active">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>¿Tienes dudas sobre HTML5? Escríbenos</h2>
+        <p>Utiliza el siguiente formulario para ponerte en contacto. Todo este formulario está estructurado utilizando las etiquetas semánticas correctas para la captura de datos.</p>
+
+        <div id="formulario-contacto">
+            <form action="#" method="POST">
+                
+                <fieldset>
+                    <legend>Tus Datos Personales</legend>
+                    
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: María Vargas">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required placeholder="tu-correo@ejemplo.com">
+                    </div>
+                </fieldset>
+
+                <fieldset class="mt-20">
+                    <legend>Tu Mensaje</legend>
+                    
+                    <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Detalle de tu consulta:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="mt-20">
+                    <button type="submit">Enviar Mensaje</button>
+                </div>
+
+            </form>
+        </div>
+
+        <aside class="contact-aside">
+            <h3>Información de Ubicación</h3>
+            <p>También puedes ubicarnos físicamente en nuestra zona de estudio y desarrollo:</p>
+            
+            <address>
+                <strong>Proyecto Programación 2026B</strong><br>
+                La Puerta, Municipio Valera<br>
+                Estado Trujillo, Venezuela.<br>
+                Correo: <a href="mailto:mariavargas@ejemplo.com">maria.vargas@ejemplo.com</a>
+            </address>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Proyecto de materia Programación 2026B. Todos los derechos reservados. María Luisa Vargas T. C.I. 32.550.647.</p>
+    </footer>
+
+</body>
+</html>
